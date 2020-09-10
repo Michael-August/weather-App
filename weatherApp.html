@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="rgb(180, 151, 172)">
+    <link rel="stylesheet" href="weatherApp.css">
+    <link rel="stylesheet" href="progressbar.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="img/logos.png">
+    <title>Smash It weather App</title>
+</head>
+<body>
+    <section class="nav-section">
+        <h4 id="logo">Smash It</h4>
+        <nav class="nav-bar">
+            <ul class="list-link">
+                <li class="link-items"></li>
+                <li class="link-items"></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="welcome">
+        <h1 id="name">Smash It Weather Forcast</h1>
+        <div class="design">
+            <p>SmashIt.com</p>
+            <div></div>
+        </div>
+        <div class="note-text">
+            <p>Dear user, notice that the default weather here is the New York City weather info, to get any other city weather info, please use the search box below.</p>
+        </div>
+        <p class="website">www.smashIt.com</p>
+    </section>
+
+    <section class="search-box">
+        <center>
+            <form action="">
+                <input type="text" class="input" id="text" placeholder="Enter city...">
+                <input type="submit" class="input" value="search">
+            </form>
+        </center>
+    </section>
+
+    <!-- <section>
+        <div class="notification">
+            <p>network error</p>
+        </div>
+    </section> -->
+
+    <section class="default">
+        <div class="container">
+            <div class="style">
+                <div class="city-icon">
+                    <h1 class="city-name">New York</h1>
+                    <!-- <img src="icons/01d.png"> -->
+                </div>
+
+                <div class="temperature">
+                    <h1 class="temperature-degree">34</h1>
+                    <p class="temperature-description">Hot</p>
+                </div>
+            </div>
+            <div class="humidity style">
+                <h3>Humidity</h3><span><em class="feel">29</em></span><br>
+                <div class="circular">
+                    <div class="inner"></div>
+                    <div class="numb"></div>
+                    <div class="circle">
+                        <div class="bar left">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="bar right">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p class="sun-rise">Sunrise: 0625AM</p>
+                <p class="sun-set">Sunrise: 0625AM</p>
+                <p class="wind-speed">windSpeed: 1.5</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="weather-search ">
+        <!-- <div class="container"> -->
+            <div class="searchResult style">
+
+            </div>
+            <!-- <div class="humidity style searchHumidity">
+
+            </div> -->
+        <!-- </div> -->
+    </section>
+    
+    <script src="./weatherApp.js"></script>
+</body>
+</html>

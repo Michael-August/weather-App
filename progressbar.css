@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.circular{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.circular .inner{
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+    margin: -40px 0 0 -40px;
+    border-radius: 100%;
+    background: #dde6f0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.circular .bar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #90a3d6;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
+
+.circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #4158d0;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+}
+
+.circle .left .progress{
+    z-index: 1;
+    animation: left 2s linear both;
+}
+
+@keyframes left{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.circle .right{
+    z-index: 3;
+    transform: rotate(180deg);
+}
+
+.circle .right .progress{
+    animation: right 2s linear both;
+    animation-delay: 2s;
+}
+
+@keyframes right{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.circular .numb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4158d0;
+}
